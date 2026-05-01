@@ -4,6 +4,12 @@
   <strong>Production-ready deep learning pipeline for semiconductor wafer defect detection, classification, and edge deployment (TFLite INT8).</strong>
 </div>
 
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=700&color=0EA5E9&center=true&vCenter=true&width=860&lines=Edge-ready+wafer+defect+classification;MobileNetV3Small+%2B+TFLite+INT8;Built+for+reliable+fab+inspection" alt="Typing animation" />
+  <br/>
+  <img src="./assets/readme/training_dynamics.gif" alt="Training dynamics animation" width="88%" />
+</div>
+
 <br/>
 
 <div align="center">
@@ -91,8 +97,6 @@ flowchart LR
     G --> J[Edge/MCU Deployment]
 ```
 
-> Diagram placeholder can be replaced with a custom architecture image for publication quality.
-
 ---
 
 ## 🛠️ Tech Stack
@@ -112,6 +116,8 @@ flowchart LR
 
 <div align="center">
   <img src="./assets/readme/pipeline_demo.gif" alt="WaferWise Inference Animation" width="90%"/>
+  <br/><br/>
+  <img src="./assets/readme/probability_race.gif" alt="Class probability race" width="90%"/>
   <br/><br/>
   <img src="./assets/readme/dataset_grid.png" alt="Wafer Defect Class Samples" width="90%"/>
 </div>
@@ -137,6 +143,21 @@ python -m venv .venv
 
 # 4) Install dependencies
 pip install -r requirements.txt
+```
+
+---
+
+## ⚡ Quickstart (Minimal)
+
+```bash
+# 1) Augment/balance dataset
+python augment_dataset.py
+
+# 2) Train + export INT8 model
+python train_int8_optimized.py
+
+# 3) Evaluate on held-out split
+python test_int8_model.py
 ```
 
 ---
@@ -198,6 +219,29 @@ WaferWise_AI-based_Wafer_defect_Classification/
 
 ---
 
+## 🧩 Dataset Format & Classes
+
+Expected layout (one folder per class):
+
+```text
+dataset_root/
+├── BRIDGE/
+├── CLEAN_CRACK/
+├── CLEAN_LAYER/
+├── CLEAN_VIA/
+├── CMP/
+├── CRACK/
+├── LER/
+├── OPEN/
+├── OTHERS/
+├── PARTICLE/
+└── VIA/
+```
+
+Class index order is recorded in the `labels.json` file inside each `model_output/*` run folder.
+
+---
+
 ## 🔌 Modules / Script Guide
 
 | Script | Purpose |
@@ -209,6 +253,44 @@ WaferWise_AI-based_Wafer_defect_Classification/
 | `test_int8_model.py` | Held-out test set evaluation with detailed metrics |
 | `test_hackathon_test_dataset.py` | Evaluates model on mapped hackathon 9-class test setup |
 | `predict_phase3_dataset.py` | Batch inference + CSV export for prediction dataset |
+
+---
+
+## 📦 Exported Artifacts
+
+Training and conversion flows emit:
+
+- `best_model.keras` (Keras checkpoint)
+- `wafer_classifier_float32.tflite` and/or `wafer_classifier_int8.tflite`
+- `labels.json` (class order), optional `labels.txt`
+- `wafer_model.h` and `wafer_labels.h` for MCU/embedded use
+
+Artifacts are stored under `model_output/<run_name>/`.
+
+---
+
+## 🧪 TFLite Inference Snippet
+
+```python
+import numpy as np
+import tensorflow as tf
+
+interpreter = tf.lite.Interpreter(
+  model_path="model_output/your_run/wafer_classifier_int8.tflite"
+)
+interpreter.allocate_tensors()
+
+input_details = interpreter.get_input_details()
+output_details = interpreter.get_output_details()
+
+# Replace with your preprocessed image tensor
+x = np.zeros(input_details[0]["shape"], dtype=input_details[0]["dtype"])
+interpreter.set_tensor(input_details[0]["index"], x)
+interpreter.invoke()
+
+pred = interpreter.get_tensor(output_details[0]["index"])
+print(pred)
+```
 
 ---
 
@@ -234,6 +316,8 @@ This repository includes metric-oriented evaluation scripts that report:
 > `model_output/phase3_final_float32/test_results.json`  
 > `model_output/phase3_final_float32/int8_test_results.json`  
 > `model_output/phase3_final_float32/hackathon_test_results_int8.json`
+
+> Tip: If INT8 accuracy is low, verify preprocessing parity between training and representative dataset calibration.
 
 <details>
 <summary><strong>Expand for recommended benchmark reporting format</strong></summary>
@@ -269,12 +353,20 @@ This repository includes metric-oriented evaluation scripts that report:
 
 ## 🧭 Roadmap / Future Improvements
 
-- [ ] Add unified `requirements.txt`
+- [ ] Add pinned `requirements-lock.txt` via pip-tools
 - [ ] Add training/inference CLI with argparse
 - [ ] Integrate experiment tracking (MLflow/W&B)
 - [ ] Add Grad-CAM explainability visuals
 - [ ] Add CI for linting + smoke inference test
 - [ ] Introduce lightweight API service for inference
+
+---
+
+## 🧩 Troubleshooting
+
+- If INT8 accuracy is low, confirm representative dataset preprocessing matches training (resize, grayscale, normalization).
+- Ensure class folder names match the expected labels; check `labels.json` for the exact order.
+- If inference fails, use `interpreter.get_input_details()` to verify dtype and shape.
 
 ---
 
@@ -329,7 +421,7 @@ GitHub: [@TharunBabu-05](https://github.com/TharunBabu-05)
 
 ---
 
-## 📈 GitHub Insights (Placeholders)
+## 📈 GitHub Insights
 
 <div align="center">
 
@@ -339,7 +431,7 @@ GitHub: [@TharunBabu-05](https://github.com/TharunBabu-05)
 </div>
 
 <div align="center">
-  <img src="./assets/readme/hero_collage.png" alt="Contribution Visual Placeholder" width="95%" />
+  <img src="./assets/readme/hero_collage.png" alt="Contribution Visual" width="95%" />
 </div>
 
 ---
