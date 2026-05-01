@@ -1,0 +1,233 @@
+{
+  "model": "wafer_classifier_int8.tflite",
+  "model_size_kb": 677.9765625,
+  "test_images": 400,
+  "overall_accuracy": 9.0,
+  "weighted_f1": 3.6302114973111475,
+  "per_class_metrics": [
+    {
+      "class": "BRIDGE",
+      "accuracy": 34.61538461538461,
+      "correct": 9,
+      "total": 26
+    },
+    {
+      "class": "CLEAN_CRACK",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 34
+    },
+    {
+      "class": "CLEAN_LAYER",
+      "accuracy": 9.090909090909092,
+      "correct": 3,
+      "total": 33
+    },
+    {
+      "class": "CLEAN_VIA",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 36
+    },
+    {
+      "class": "CMP",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 49
+    },
+    {
+      "class": "CRACK",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 33
+    },
+    {
+      "class": "LER",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 35
+    },
+    {
+      "class": "OPEN",
+      "accuracy": 2.7027027027027026,
+      "correct": 1,
+      "total": 37
+    },
+    {
+      "class": "OTHERS",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 39
+    },
+    {
+      "class": "PARTICLE",
+      "accuracy": 62.16216216216216,
+      "correct": 23,
+      "total": 37
+    },
+    {
+      "class": "VIA",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 41
+    }
+  ],
+  "confusion_matrix": [
+    [
+      9,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      10,
+      0
+    ],
+    [
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    [
+      20,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    [
+      13,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23,
+      0
+    ],
+    [
+      24,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    [
+      12,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      21,
+      0
+    ],
+    [
+      11,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      21,
+      0
+    ],
+    [
+      20,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      10,
+      0
+    ],
+    [
+      17,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      18,
+      0
+    ],
+    [
+      11,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23,
+      0
+    ],
+    [
+      11,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      29,
+      0
+    ]
+  ],
+  "class_names": [
+    "BRIDGE",
+    "CLEAN_CRACK",
+    "CLEAN_LAYER",
+    "CLEAN_VIA",
+    "CMP",
+    "CRACK",
+    "LER",
+    "OPEN",
+    "OTHERS",
+    "PARTICLE",
+    "VIA"
+  ]
+}

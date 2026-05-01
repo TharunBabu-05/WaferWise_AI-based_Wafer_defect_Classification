@@ -1,0 +1,30 @@
+{
+  "model": "MobileNetV3Small",
+  "input_shape": [
+    1,
+    128,
+    128,
+    1
+  ],
+  "num_classes": 11,
+  "class_names": [
+    "BRIDGE",
+    "CLEAN_CRACK",
+    "CLEAN_LAYER",
+    "CLEAN_VIA",
+    "CMP",
+    "CRACK",
+    "LER",
+    "OPEN",
+    "OTHERS",
+    "PARTICLE",
+    "VIA"
+  ],
+  "dataset": "final_4000_dataset",
+  "train_images": 3194,
+  "val_images": 399,
+  "test_images": 400,
+  "test_accuracy": 0.9125000238418579,
+  "tflite_size_kb": 1970.5,
+  "format": "float32"
+}

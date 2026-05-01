@@ -1,0 +1,9 @@
+Bridge
+CMP
+Clean
+Crack
+LER
+Open
+Other
+Particle
+VIA

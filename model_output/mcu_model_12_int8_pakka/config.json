@@ -1,0 +1,13 @@
+{
+  "model": "MobileNetV3Small",
+  "input_size": [
+    128,
+    128,
+    1
+  ],
+  "input_type": "grayscale",
+  "input_range": "[0, 255]",
+  "num_classes": 9,
+  "quantization": "full_int8",
+  "val_accuracy": 0.8525000214576721
+}

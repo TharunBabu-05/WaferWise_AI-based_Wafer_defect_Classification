@@ -1,0 +1,525 @@
+{
+  "model_path": "model_output/phase3_final_float32/wafer_classifier_float32.tflite",
+  "test_dataset": "Priyadarshan_ulaipu",
+  "total_images": 1228,
+  "total_correct": 368,
+  "accuracy": 29.967426710097723,
+  "accuracy_excl_stain": 33.2129963898917,
+  "total_images_excl_stain": 1108,
+  "total_correct_excl_stain": 368,
+  "weighted_precision": 35.34268738862173,
+  "weighted_recall": 33.2129963898917,
+  "weighted_f1": 31.99091561151192,
+  "per_class_accuracy": {
+    "Bridge_defect": 32.5,
+    "Clean": 45.27027027027027,
+    "Cmp_defect": 47.5,
+    "Crack_defect": 58.333333333333336,
+    "LER_Defect": 30.0,
+    "Opens_Defect": 25.0,
+    "Others": 8.333333333333332,
+    "P_cntamn": 18.333333333333332,
+    "Stain_def": 0.0,
+    "Via_Defect": 30.833333333333336
+  },
+  "class_distribution": {
+    "Bridge_defect": 120,
+    "Clean": 148,
+    "Cmp_defect": 120,
+    "Crack_defect": 120,
+    "LER_Defect": 120,
+    "Opens_Defect": 120,
+    "Others": 120,
+    "P_cntamn": 120,
+    "Stain_def": 120,
+    "Via_Defect": 120
+  },
+  "confusion_matrix": {
+    "Bridge": {
+      "Bridge": 39,
+      "Other": 21,
+      "CMP": 7,
+      "Particle": 9,
+      "Crack": 15,
+      "Clean": 12,
+      "LER": 6,
+      "Open": 11,
+      "Stain": 0,
+      "VIA": 0
+    },
+    "Clean": {
+      "CMP": 11,
+      "Clean": 67,
+      "Crack": 6,
+      "Particle": 3,
+      "VIA": 13,
+      "Other": 28,
+      "Open": 10,
+      "Bridge": 3,
+      "LER": 7,
+      "Stain": 0
+    },
+    "CMP": {
+      "CMP": 57,
+      "Other": 9,
+      "Open": 5,
+      "Bridge": 8,
+      "Particle": 13,
+      "Clean": 7,
+      "Crack": 19,
+      "LER": 1,
+      "VIA": 1,
+      "Stain": 0
+    },
+    "Crack": {
+      "Crack": 70,
+      "Other": 16,
+      "Clean": 12,
+      "VIA": 1,
+      "Bridge": 4,
+      "CMP": 17,
+      "LER": 0,
+      "Open": 0,
+      "Particle": 0,
+      "Stain": 0
+    },
+    "LER": {
+      "Bridge": 18,
+      "Clean": 34,
+      "LER": 36,
+      "Open": 8,
+      "Other": 8,
+      "Crack": 7,
+      "CMP": 6,
+      "Particle": 3,
+      "Stain": 0,
+      "VIA": 0
+    },
+    "Open": {
+      "Bridge": 15,
+      "Other": 23,
+      "Crack": 19,
+      "Open": 30,
+      "CMP": 11,
+      "Clean": 13,
+      "VIA": 3,
+      "LER": 3,
+      "Particle": 3,
+      "Stain": 0
+    },
+    "Other": {
+      "Clean": 33,
+      "Crack": 44,
+      "CMP": 9,
+      "Other": 10,
+      "Particle": 16,
+      "VIA": 3,
+      "Bridge": 2,
+      "Open": 2,
+      "LER": 1,
+      "Stain": 0
+    },
+    "Particle": {
+      "Other": 32,
+      "CMP": 11,
+      "Particle": 22,
+      "Clean": 20,
+      "Crack": 24,
+      "Open": 7,
+      "LER": 2,
+      "Bridge": 1,
+      "VIA": 1,
+      "Stain": 0
+    },
+    "Stain": {
+      "Clean": 23,
+      "Crack": 55,
+      "Bridge": 6,
+      "Other": 15,
+      "Particle": 11,
+      "VIA": 4,
+      "Open": 2,
+      "LER": 1,
+      "CMP": 3
+    },
+    "VIA": {
+      "Bridge": 5,
+      "CMP": 4,
+      "Clean": 35,
+      "Particle": 12,
+      "VIA": 37,
+      "Crack": 8,
+      "Other": 15,
+      "LER": 4,
+      "Open": 0,
+      "Stain": 0
+    }
+  },
+  "model_predictions": {
+    "Bridge_defect": {
+      "BRIDGE": 39,
+      "OTHERS": 21,
+      "CMP": 7,
+      "PARTICLE": 9,
+      "CRACK": 15,
+      "CLEAN_LAYER": 8,
+      "CLEAN_CRACK": 2,
+      "LER": 6,
+      "OPEN": 11,
+      "CLEAN_VIA": 2
+    },
+    "Clean": {
+      "CMP": 11,
+      "CLEAN_LAYER": 46,
+      "CRACK": 6,
+      "CLEAN_VIA": 15,
+      "PARTICLE": 3,
+      "VIA": 13,
+      "OTHERS": 28,
+      "OPEN": 10,
+      "BRIDGE": 3,
+      "LER": 7,
+      "CLEAN_CRACK": 6
+    },
+    "Cmp_defect": {
+      "CMP": 57,
+      "OTHERS": 9,
+      "OPEN": 5,
+      "BRIDGE": 8,
+      "PARTICLE": 13,
+      "CLEAN_LAYER": 1,
+      "CRACK": 19,
+      "LER": 1,
+      "VIA": 1,
+      "CLEAN_CRACK": 5,
+      "CLEAN_VIA": 1
+    },
+    "Crack_defect": {
+      "CRACK": 70,
+      "OTHERS": 16,
+      "CLEAN_CRACK": 8,
+      "VIA": 1,
+      "BRIDGE": 4,
+      "CLEAN_LAYER": 4,
+      "CMP": 17
+    },
+    "LER_Defect": {
+      "BRIDGE": 18,
+      "CLEAN_CRACK": 10,
+      "LER": 36,
+      "OPEN": 8,
+      "CLEAN_LAYER": 21,
+      "OTHERS": 8,
+      "CRACK": 7,
+      "CMP": 6,
+      "CLEAN_VIA": 3,
+      "PARTICLE": 3
+    },
+    "Opens_Defect": {
+      "BRIDGE": 15,
+      "OTHERS": 23,
+      "CRACK": 19,
+      "OPEN": 30,
+      "CMP": 11,
+      "CLEAN_CRACK": 4,
+      "VIA": 3,
+      "LER": 3,
+      "PARTICLE": 3,
+      "CLEAN_VIA": 1,
+      "CLEAN_LAYER": 8
+    },
+    "Others": {
+      "CLEAN_CRACK": 18,
+      "CRACK": 44,
+      "CLEAN_LAYER": 8,
+      "CMP": 9,
+      "OTHERS": 10,
+      "PARTICLE": 16,
+      "CLEAN_VIA": 7,
+      "VIA": 3,
+      "BRIDGE": 2,
+      "OPEN": 2,
+      "LER": 1
+    },
+    "P_cntamn": {
+      "OTHERS": 32,
+      "CMP": 11,
+      "PARTICLE": 22,
+      "CLEAN_LAYER": 6,
+      "CRACK": 24,
+      "OPEN": 7,
+      "LER": 2,
+      "BRIDGE": 1,
+      "VIA": 1,
+      "CLEAN_CRACK": 13,
+      "CLEAN_VIA": 1
+    },
+    "Stain_def": {
+      "CLEAN_LAYER": 3,
+      "CLEAN_CRACK": 20,
+      "CRACK": 55,
+      "BRIDGE": 6,
+      "OTHERS": 15,
+      "PARTICLE": 11,
+      "VIA": 4,
+      "OPEN": 2,
+      "LER": 1,
+      "CMP": 3
+    },
+    "Via_Defect": {
+      "BRIDGE": 5,
+      "CMP": 4,
+      "CLEAN_VIA": 31,
+      "PARTICLE": 12,
+      "VIA": 37,
+      "CLEAN_CRACK": 2,
+      "CRACK": 8,
+      "OTHERS": 15,
+      "LER": 4,
+      "CLEAN_LAYER": 2
+    }
+  },
+  "misclassified": [
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_10.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "OTHERS",
+      "pred_normalized": "Other",
+      "confidence": 0.8002278208732605
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_100.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CMP",
+      "pred_normalized": "CMP",
+      "confidence": 0.9698642492294312
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_101.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CMP",
+      "pred_normalized": "CMP",
+      "confidence": 0.9130070209503174
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_103.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "OTHERS",
+      "pred_normalized": "Other",
+      "confidence": 0.8584623336791992
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_104.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "PARTICLE",
+      "pred_normalized": "Particle",
+      "confidence": 0.6276025176048279
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_107.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CRACK",
+      "pred_normalized": "Crack",
+      "confidence": 0.5410223007202148
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_108.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CLEAN_LAYER",
+      "pred_normalized": "Clean",
+      "confidence": 0.9411253929138184
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_109.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CRACK",
+      "pred_normalized": "Crack",
+      "confidence": 0.9999927282333374
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_11.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CLEAN_LAYER",
+      "pred_normalized": "Clean",
+      "confidence": 0.6192768812179565
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_110.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CMP",
+      "pred_normalized": "CMP",
+      "confidence": 0.5785190463066101
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_112.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CRACK",
+      "pred_normalized": "Crack",
+      "confidence": 0.9967948794364929
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_113.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CLEAN_CRACK",
+      "pred_normalized": "Clean",
+      "confidence": 0.9949564337730408
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_114.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "OTHERS",
+      "pred_normalized": "Other",
+      "confidence": 0.987285315990448
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_115.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "OTHERS",
+      "pred_normalized": "Other",
+      "confidence": 0.6931644082069397
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_116.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "PARTICLE",
+      "pred_normalized": "Particle",
+      "confidence": 0.47880735993385315
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_117.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CRACK",
+      "pred_normalized": "Crack",
+      "confidence": 0.9879032969474792
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_118.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CRACK",
+      "pred_normalized": "Crack",
+      "confidence": 0.9999972581863403
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_119.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CRACK",
+      "pred_normalized": "Crack",
+      "confidence": 0.9736620783805847
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_12.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "OTHERS",
+      "pred_normalized": "Other",
+      "confidence": 0.45912882685661316
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_120.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "PARTICLE",
+      "pred_normalized": "Particle",
+      "confidence": 0.5550179481506348
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_13.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "LER",
+      "pred_normalized": "LER",
+      "confidence": 0.9706645011901855
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_15.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CLEAN_LAYER",
+      "pred_normalized": "Clean",
+      "confidence": 0.6798259019851685
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_17.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CRACK",
+      "pred_normalized": "Crack",
+      "confidence": 0.8008220791816711
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_19.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CLEAN_LAYER",
+      "pred_normalized": "Clean",
+      "confidence": 0.6415162086486816
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_2.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "LER",
+      "pred_normalized": "LER",
+      "confidence": 0.4687809944152832
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_21.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "CLEAN_LAYER",
+      "pred_normalized": "Clean",
+      "confidence": 0.9021569490432739
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_22.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "OPEN",
+      "pred_normalized": "Open",
+      "confidence": 0.2454003095626831
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_24.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "OTHERS",
+      "pred_normalized": "Other",
+      "confidence": 0.4927288889884949
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_28.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "LER",
+      "pred_normalized": "LER",
+      "confidence": 0.6134287118911743
+    },
+    {
+      "file": "Priyadarshan_ulaipu\\Bridge_defect\\Bridge_defect_29.png",
+      "true_class": "Bridge_defect",
+      "true_normalized": "Bridge",
+      "pred_model_class": "OTHERS",
+      "pred_normalized": "Other",
+      "confidence": 0.567807137966156
+    }
+  ],
+  "num_misclassified": 860
+}

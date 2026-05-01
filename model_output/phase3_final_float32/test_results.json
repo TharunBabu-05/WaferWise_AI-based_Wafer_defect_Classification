@@ -1,0 +1,76 @@
+{
+  "accuracy": 91.25,
+  "total_images": 400,
+  "correct_predictions": 365,
+  "weighted_precision": 91.63040966386555,
+  "weighted_recall": 91.25,
+  "weighted_f1": 91.32667613955917,
+  "per_class": {
+    "BRIDGE": {
+      "precision": 81.25,
+      "recall": 100.0,
+      "f1": 89.65517241379311,
+      "support": 26
+    },
+    "CLEAN_CRACK": {
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "support": 34
+    },
+    "CLEAN_LAYER": {
+      "precision": 74.28571428571429,
+      "recall": 78.78787878787878,
+      "f1": 76.47058823529413,
+      "support": 33
+    },
+    "CLEAN_VIA": {
+      "precision": 94.11764705882352,
+      "recall": 88.88888888888889,
+      "f1": 91.42857142857143,
+      "support": 36
+    },
+    "CMP": {
+      "precision": 100.0,
+      "recall": 89.79591836734694,
+      "f1": 94.62365591397848,
+      "support": 49
+    },
+    "CRACK": {
+      "precision": 93.93939393939394,
+      "recall": 93.93939393939394,
+      "f1": 93.93939393939394,
+      "support": 33
+    },
+    "LER": {
+      "precision": 86.11111111111111,
+      "recall": 88.57142857142857,
+      "f1": 87.32394366197184,
+      "support": 35
+    },
+    "OPEN": {
+      "precision": 94.44444444444444,
+      "recall": 91.8918918918919,
+      "f1": 93.15068493150685,
+      "support": 37
+    },
+    "OTHERS": {
+      "precision": 89.74358974358975,
+      "recall": 89.74358974358975,
+      "f1": 89.74358974358975,
+      "support": 39
+    },
+    "PARTICLE": {
+      "precision": 91.66666666666666,
+      "recall": 89.1891891891892,
+      "f1": 90.41095890410958,
+      "support": 37
+    },
+    "VIA": {
+      "precision": 95.1219512195122,
+      "recall": 95.1219512195122,
+      "f1": 95.1219512195122,
+      "support": 41
+    }
+  }
+}

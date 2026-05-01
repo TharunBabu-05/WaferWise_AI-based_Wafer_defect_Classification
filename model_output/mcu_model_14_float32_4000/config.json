@@ -1,0 +1,16 @@
+{
+  "model": "MobileNetV3Small",
+  "input_size": [
+    128,
+    128,
+    1
+  ],
+  "input_type": "grayscale",
+  "input_dtype": "float32",
+  "input_range": "[0, 255]",
+  "num_classes": 9,
+  "quantization": "none (float32)",
+  "dataset": "hackathon_balanced_4000",
+  "total_images": 4000,
+  "val_accuracy": 0.9037500023841858
+}

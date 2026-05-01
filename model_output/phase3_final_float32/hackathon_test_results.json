@@ -1,0 +1,187 @@
+{
+  "test_dataset": "hackathon_test_dataset",
+  "model_path": "model_output/phase3_final_float32\\wafer_classifier_float32.tflite",
+  "model_size_kb": 1970.5,
+  "total_images": 296,
+  "overall_accuracy": 86.82432432432432,
+  "per_class_metrics": [
+    {
+      "class": "Bridge",
+      "accuracy": 100.0,
+      "correct": 32,
+      "total": 32
+    },
+    {
+      "class": "CMP",
+      "accuracy": 96.66666666666667,
+      "correct": 29,
+      "total": 30
+    },
+    {
+      "class": "Clean",
+      "accuracy": 81.81818181818183,
+      "correct": 27,
+      "total": 33
+    },
+    {
+      "class": "Crack",
+      "accuracy": 87.09677419354838,
+      "correct": 27,
+      "total": 31
+    },
+    {
+      "class": "LER",
+      "accuracy": 96.66666666666667,
+      "correct": 29,
+      "total": 30
+    },
+    {
+      "class": "Open",
+      "accuracy": 86.66666666666667,
+      "correct": 26,
+      "total": 30
+    },
+    {
+      "class": "Other",
+      "accuracy": 66.0,
+      "correct": 33,
+      "total": 50
+    },
+    {
+      "class": "Particle",
+      "accuracy": 93.33333333333333,
+      "correct": 28,
+      "total": 30
+    },
+    {
+      "class": "VIA",
+      "accuracy": 86.66666666666667,
+      "correct": 26,
+      "total": 30
+    }
+  ],
+  "clean_predictions": {
+    "CLEAN_VIA": 5,
+    "CLEAN_LAYER": 20,
+    "CLEAN_CRACK": 2,
+    "CRACK": 1,
+    "BRIDGE": 1,
+    "OTHERS": 1,
+    "VIA": 2,
+    "CMP": 1
+  },
+  "misclassified_count": 39,
+  "confusion_matrix": [
+    [
+      32,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      29,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      27,
+      1,
+      0,
+      0,
+      1,
+      0,
+      2
+    ],
+    [
+      0,
+      2,
+      1,
+      27,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      29,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      26,
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      6,
+      2,
+      0,
+      1,
+      1,
+      33,
+      4,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      28,
+      0
+    ],
+    [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      1,
+      0,
+      26
+    ]
+  ],
+  "class_order": [
+    "Bridge",
+    "CMP",
+    "Clean",
+    "Crack",
+    "LER",
+    "Open",
+    "Other",
+    "Particle",
+    "VIA"
+  ],
+  "weighted_f1": 86.59380024001499
+}

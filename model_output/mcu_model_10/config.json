@@ -1,0 +1,12 @@
+{
+  "img_size": 128,
+  "batch_size": 32,
+  "epochs": 80,
+  "initial_lr": 0.0005,
+  "min_lr": 1e-06,
+  "patience": 15,
+  "val_split": 0.2,
+  "backbone": "MobileNetV3Small",
+  "best_val_acc": 0.8399999737739563,
+  "full_acc": 0.8895
+}
