@@ -7,7 +7,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://placehold.co/1200x400/0f172a/ffffff?text=WaferWise+%7C+AI-Based+Wafer+Defect+Classification" alt="WaferWise Banner" width="100%" />
+  <img src="./assets/readme/hero_collage.png" alt="WaferWise Banner" width="100%" />
 </div>
 
 ---
@@ -111,9 +111,13 @@ flowchart LR
 ## 📸 Demo / Screenshots
 
 <div align="center">
-  <img src="https://placehold.co/900x420/111827/ffffff?text=Training+Metrics+Dashboard+(Placeholder)" alt="Training Demo" width="85%"/>
+  <img src="./assets/readme/pipeline_demo.gif" alt="WaferWise Inference Animation" width="90%"/>
   <br/><br/>
-  <img src="https://placehold.co/900x420/1f2937/ffffff?text=Inference+on+Wafer+Samples+(Placeholder)" alt="Inference Demo" width="85%"/>
+  <img src="./assets/readme/dataset_grid.png" alt="Wafer Defect Class Samples" width="90%"/>
+</div>
+
+<div align="center">
+  <sub>🎞️ The GIF is generated from the project pipeline to add motion-based storytelling in the README.</sub>
 </div>
 
 ---
@@ -132,10 +136,7 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 
 # 4) Install dependencies
-pip install tensorflow numpy pillow scikit-learn
-
-# Optional (for quantization-aware training)
-pip install tensorflow-model-optimization
+pip install -r requirements.txt
 ```
 
 ---
@@ -179,6 +180,11 @@ WaferWise_AI-based_Wafer_defect_Classification/
 ├── train_phase3_final_hackathon_day-1.py
 ├── convert_float32_to_int8.py
 ├── predict_phase3_dataset.py
+├── assets/
+│   └── readme/
+│       ├── hero_collage.png
+│       ├── dataset_grid.png
+│       └── pipeline_demo.gif
 ├── test_int8_model.py
 ├── test_hackathon_test_dataset.py
 ├── test_phase3_final_hackathon_day-1.py
@@ -333,7 +339,7 @@ GitHub: [@TharunBabu-05](https://github.com/TharunBabu-05)
 </div>
 
 <div align="center">
-  <img src="https://placehold.co/1000x250/0b1220/ffffff?text=Contribution+Graph+Placeholder" alt="Contribution Graph Placeholder" width="95%" />
+  <img src="./assets/readme/hero_collage.png" alt="Contribution Visual Placeholder" width="95%" />
 </div>
 
 ---
