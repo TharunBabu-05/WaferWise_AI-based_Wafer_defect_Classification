@@ -1,0 +1,7 @@
+tensorflow>=2.10
+numpy>=1.23
+pillow>=9.0
+scikit-learn>=1.1
+
+# Optional for quantization-aware training (QAT)
+tensorflow-model-optimization>=0.7

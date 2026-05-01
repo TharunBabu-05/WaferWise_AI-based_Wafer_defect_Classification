@@ -216,6 +216,19 @@ This repository includes metric-oriented evaluation scripts that report:
 - confusion matrix,
 - model size in KB/MB.
 
+### ✅ Recorded Benchmarks (from saved result files)
+
+| Evaluation | Model | Dataset | Images | Accuracy | Weighted F1 | Model Size |
+|---|---|---|---:|---:|---:|---:|
+| `test_results.json` | Float32 TFLite | Held-out test split | 400 | **91.25%** | **91.33%** | _not recorded_ |
+| `int8_test_results.json` | INT8 TFLite | Held-out test split | 400 | **9.00%** | **3.63%** | **677.98 KB** |
+| `hackathon_test_results_int8.json` | INT8 TFLite | `hackathon_test_dataset` | 296 | **10.47%** | **4.93%** | **677.98 KB** |
+
+> Source files:  
+> `model_output/phase3_final_float32/test_results.json`  
+> `model_output/phase3_final_float32/int8_test_results.json`  
+> `model_output/phase3_final_float32/hackathon_test_results_int8.json`
+
 <details>
 <summary><strong>Expand for recommended benchmark reporting format</strong></summary>
 
@@ -289,9 +302,8 @@ Please open an issue first for major changes.
 
 ## 📜 License
 
-This project is currently released without an explicit license file.
-
-> Recommended: add an `MIT` license (or organization-approved license) for open-source clarity.
+This project is licensed under the **MIT License**.  
+See [`LICENSE`](./LICENSE) for full text.
 
 ---
 
