@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=700&color=0EA5E9&center=true&vCenter=true&width=860&lines=Edge-ready+wafer+defect+classification;MobileNetV3Small+%2B+TFLite+INT8;Built+for+reliable+fab+inspection" alt="Typing animation" />
+  <img src="./assets/readme/hero_animated.svg" alt="WaferWise animated banner" width="100%" />
   <br/>
   <img src="./assets/readme/training_dynamics.gif" alt="Training dynamics animation" width="88%" />
 </div>
@@ -28,6 +28,37 @@
 ![Domain](https://img.shields.io/badge/Domain-Semiconductor%20Inspection-111827?style=for-the-badge)
 
 </div>
+
+---
+
+## 📚 Table of Contents
+
+- [Overview](#overview)
+- [Why this project matters](#why-this-project-matters)
+- [Key Features](#key-features)
+- [How It Works](#how-it-works)
+- [Architecture](#architecture)
+- [Tech Stack](#tech-stack)
+- [Demo / Screenshots](#demo--screenshots)
+- [Installation Guide](#installation-guide)
+- [Quickstart (Minimal)](#quickstart-minimal)
+- [Usage Instructions](#usage-instructions)
+- [Project Structure](#project-structure)
+- [Dataset Format & Classes](#dataset-format--classes)
+- [Modules / Script Guide](#modules--script-guide)
+- [Exported Artifacts](#exported-artifacts)
+- [TFLite Inference Snippet](#tflite-inference-snippet)
+- [Performance / Results](#performance--results)
+- [Real-World Applications](#real-world-applications)
+- [Comparison vs Traditional Inspection](#comparison-vs-traditional-inspection)
+- [Roadmap / Future Improvements](#roadmap--future-improvements)
+- [Troubleshooting](#troubleshooting)
+- [Recruiter-Friendly Highlights](#recruiter-friendly-highlights)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+- [Contact / Author](#contact--author)
+- [GitHub Insights](#github-insights)
 
 ---
 
@@ -203,7 +234,10 @@ WaferWise_AI-based_Wafer_defect_Classification/
 ├── predict_phase3_dataset.py
 ├── assets/
 │   └── readme/
+│       ├── hero_animated.svg
 │       ├── hero_collage.png
+│       ├── training_dynamics.gif
+│       ├── probability_race.gif
 │       ├── dataset_grid.png
 │       └── pipeline_demo.gif
 ├── test_int8_model.py
